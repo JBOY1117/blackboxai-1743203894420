@@ -1,0 +1,59 @@
+/* Custom styles to complement Tailwind */
+body {
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Chart container responsive behavior */
+#predictionChart {
+    width: 100% !important;
+    height: auto !important;
+}
+
+/* Input field styling */
+input[type="number"] {
+    border: 1px solid #4b5563;
+    transition: all 0.3s ease;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #f59e0b;
+    box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .grid-cols-3 {
+        grid-template-columns: 1fr;
+    }
+    
+    .lg\:col-span-2 {
+        grid-column: span 1;
+    }
+}
+
+/* Animation for real-time updates */
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+}
+
+.text-green-400, .text-amber-400 {
+    animation: pulse 1.5s infinite;
+}
+
+/* Tooltip styling */
+.chart-tooltip {
+    background: rgba(31, 41, 55, 0.9) !important;
+    border-radius: 0.25rem !important;
+    padding: 0.5rem 1rem !important;
+    border: 1px solid #4b5563 !important;
+}
+
+/* Bet button hover effect */
+button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
