@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviator Bet Predictor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="bg-gray-800 p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-amber-400">
+                <i class="fas fa-chart-line mr-2"></i>Aviator Predictor Pro
+            </h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#" class="hover:text-amber-400">Dashboard</a></li>
+                    <li><a href="#" class="hover:text-amber-400">History</a></li>
+                    <li><a href="#" class="hover:text-amber-400">Tips</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4 grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- Real-time Prediction Section -->
+        <section class="lg:col-span-2 bg-gray-800 p-6 rounded-lg shadow">
+            <h2 class="text-xl font-semibold mb-4 text-amber-400">
+                <i class="fas fa-bolt mr-2"></i>Live Prediction
+            </h2>
+            <div class="bg-gray-700 p-4 rounded mb-4">
+                <canvas id="predictionChart" height="200"></canvas>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-gray-700 p-4 rounded">
+                    <h3 class="font-medium mb-2">Next Round Odds</h3>
+                    <p class="text-2xl font-bold text-green-400">2.45x</p>
+                </div>
+                <div class="bg-gray-700 p-4 rounded">
+                    <h3 class="font-medium mb-2">Confidence Level</h3>
+                    <p class="text-2xl font-bold text-amber-400">78%</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Betting Panel -->
+        <section class="bg-gray-800 p-6 rounded-lg shadow">
+            <h2 class="text-xl font-semibold mb-4 text-amber-400">
+                <i class="fas fa-coins mr-2"></i>Betting Panel
+            </h2>
+            <div class="space-y-4">
+                <div>
+                    <label class="block mb-2">Bet Amount</label>
+                    <input type="number" class="w-full bg-gray-700 p-2 rounded">
+                </div>
+                <div>
+                    <label class="block mb-2">Auto Cashout</label>
+                    <input type="number" class="w-full bg-gray-700 p-2 rounded" placeholder="Multiplier">
+                </div>
+                <button class="w-full bg-green-600 hover:bg-green-700 py-3 rounded font-bold">
+                    PLACE BET
+                </button>
+                <div class="bg-gray-700 p-4 rounded">
+                    <h3 class="font-medium mb-2">Bankroll</h3>
+                    <p class="text-2xl font-bold">$1,000.00</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Responsible Gambling Tips -->
+        <section class="lg:col-span-3 bg-gray-800 p-6 rounded-lg shadow mt-4">
+            <h2 class="text-xl font-semibold mb-4 text-amber-400">
+                <i class="fas fa-shield-alt mr-2"></i>Responsible Gambling
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-gray-700 p-4 rounded">
+                    <h3 class="font-medium mb-2">1. Set Limits</h3>
+                    <p>Decide in advance how much you can afford to lose.</p>
+                </div>
+                <div class="bg-gray-700 p-4 rounded">
+                    <h3 class="font-medium mb-2">2. Time Management</h3>
+                    <p>Take regular breaks to maintain clear judgment.</p>
+                </div>
+                <div class="bg-gray-700 p-4 rounded">
+                    <h3 class="font-medium mb-2">3. Never Chase Losses</h3>
+                    <p>Accept losses as part of the game.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="../src/js/main.js"></script>
+</body>
+</html>
