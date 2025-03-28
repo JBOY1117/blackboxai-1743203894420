@@ -1,0 +1,20 @@
+{
+    "historicalData": [
+        {"round": 1, "multiplier": 1.85, "outcome": "win"},
+        {"round": 2, "multiplier": 2.30, "outcome": "win"},
+        {"round": 3, "multiplier": 1.12, "outcome": "loss"},
+        {"round": 4, "multiplier": 3.45, "outcome": "win"},
+        {"round": 5, "multiplier": 1.05, "outcome": "loss"},
+        {"round": 6, "multiplier": 2.15, "outcome": "win"},
+        {"round": 7, "multiplier": 1.50, "outcome": "win"},
+        {"round": 8, "multiplier": 1.92, "outcome": "win"},
+        {"round": 9, "multiplier": 1.08, "outcome": "loss"},
+        {"round": 10, "multiplier": 4.20, "outcome": "win"}
+    ],
+    "statistics": {
+        "winRate": 70,
+        "avgWinMultiplier": 2.45,
+        "avgLossMultiplier": 1.08,
+        "bestStreak": 4
+    }
+}
